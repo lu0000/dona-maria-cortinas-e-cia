@@ -7,10 +7,9 @@ body{
     background-color: #FDF4FA;
 }
 
-/*Topo do site*/
+/*Topo do site---------------------------------------------------------------------*/
 header{
     top: 0;
-    position: fixed;
     background-color: #D13A65;
     display: flex;
     align-items: center;
@@ -59,21 +58,97 @@ header .barra-pesquisa button{
     cursor: pointer;
 }
 main{
-    background-color: white;
+    background-color: #f4f5f7;
     width: 100%;
     min-height: 100vh;
+    padding-bottom: 3rem;
+}
+.banner-top{/*Banner--------------------------------------------------------------------*/
+    width: 100%;
+}
+.banner-top img{
+    width: 100%;
+    height: 100%;
+}
+.categorias{/*Categorias--------------------------------------------------------------------*/
+    background-color: #e0e6e6;
+    padding: 1rem 16%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cat{
+    width: 23%;
+    height: 13rem;
+    background-color: #D13A65;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cat div{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao aplicar zoom */
+}
+.cat img{
+    width: 100%;
+    height: 100%;
 }
 
+.cat div:hover{
+    transform: scale(1.2);
+}
+.categoria{
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem 16%;
+}
+.categoria img{
+    width: 100%;
+    height: 100%;
+}
+.banner-categoria{
+    width: 100%;
+    height: 21.5rem;
+}
+.titulo-categoria{
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0 50px;
+}
+.bloco-itens{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.itens{
+    height: 32rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.itens-img{
+    height: 17rem;
+}
+.itens-descricao{
+    width: 100%;
+    height: 13rem;
+    background-color: #f0ecec;  
+}
+.itens:hover{
+    box-shadow: 
+    2px 0 10px -3px rgba(0, 0, 0, 0.5), /* Sombra à direita */
+    -2px 0 10px -3px rgba(0, 0, 0, 0.5); /* Sombra à esquerda */
+}
+
+/*Rodapé do site---------------------------------------------------------------------*/
 footer{
-    background-color: #D13A65;
-    color: white;
+    background-color: #D7D0D7;
     width: 100%;
     padding: 10px 0;
     text-align: center;
 }
 
 /*CADASTRO---------------------------------------------------------------------------*/
-
 .cadastro-login{
     display: flex;
     flex-direction: column;
