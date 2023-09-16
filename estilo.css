@@ -80,7 +80,7 @@ main{
 .cat{
     width: 23%;
     height: 13rem;
-    background-color: #D13A65;
+    background-color: #c5caca;
     overflow: hidden;
     cursor: pointer;
 }
