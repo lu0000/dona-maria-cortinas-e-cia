@@ -116,6 +116,7 @@ main{
     font-size: 25px;
     margin: 30px 0 50px;
 }
+/* meio do index --------------------------------------------------------------------- */
 .bloco-itens{
     display: grid;
     grid-template-columns: repeat(4, 23%);
@@ -182,7 +183,7 @@ main{
     outline: none;
     box-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
 }
-  .carrinho{
+.carrinho{
     padding: 1rem 16%;
 }
 .titulo-carrinho{
@@ -427,3 +428,114 @@ select {
     color: #FF1493;
     cursor: pointer;
 }
+
+/* FAVORITOS ----------------------------------*/
+
+.produtos-favoritos{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 30px;
+    padding: 1.5rem;
+}
+
+.pro-favoritos{
+    background-color: #FDF4FA;
+    height: 28rem;
+    cursor: pointer;
+    box-sizing: border-box;
+   padding: 0.6rem;
+    border-radius: 0.2rem;
+}
+
+.img-favoritos{
+    width: 15rem;
+    height: 60%;
+    margin-right: 1rem;
+    
+}
+
+.img-favoritos img{
+    max-width:2280px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    border-radius: 0.2rem;
+}
+.pro-fav-informacoes{
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    word-wrap: break-word;
+}
+
+.pro-fav-informacoes p{
+    padding-top: 0.1rem;
+}
+
+.pro-fav-informacoes div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.pro-fav-informacoes button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+    background-color: #FF69B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+  
+.pro-fav-informacoes button:hover {
+    background-color: #FF1493;
+}
+  
+.pro-fav-informacoes button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
+}
+.titulo-favoritos{
+    background-color: #FDF4FA;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+}
+.titulo-favoritos h2{
+    text-decoration: none;
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: normal;
+}
+.titulo-favoritos a{
+    text-decoration: none;
+    color: #000;
+}
+.titulo-favoritos button{
+    background-color: #F07481;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.titulo-favoritos button:hover {
+    background-color: #ec6472;
+}
+
+.favoritos{
+    padding: 1rem 10%;
+}
+  
