@@ -401,3 +401,88 @@ select {
     color: #FF1493;
     cursor: pointer;
 }
+
+
+/* COMPRA ---------------------------------------------------*/
+
+#comprar{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.comprarproduto{
+    background-color: white;
+    width: 40%;
+    height: 36rem;
+    margin-right: 1rem;
+    padding: 2rem 0.8rem;
+    box-shadow: 
+    2px 0 10px -3px rgba(99, 98, 98, 0.2), /* Sombra à direita */
+    -2px 0 10px -3px rgba(99, 98, 98, 0.2); /* Sombra à esquerda */;
+}
+.comprarimg{
+    width: 100%;
+    height: 25rem;
+}
+.comprarimg img{
+    width: 100%;
+    height: 100%;
+}
+.infor{
+    background-color: white;
+    width: 30%;
+    height: 36rem;
+    padding: 2rem 0.8rem;
+    word-break: break-all;
+    box-shadow: 
+    2px 0 10px -3px rgba(99, 98, 98, 0.2), /* Sombra à direita */
+    -2px 0 10px -3px rgba(99, 98, 98, 0.2); /* Sombra à esquerda */;
+}
+.tituloinfor{
+    color: #1C1C1C;
+    margin-bottom: 2rem;
+}
+.precoinfor{
+    color: #1C1C1C;
+    margin-bottom: 1rem;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0px 20px 0px;
+    font-size: 20px;
+    background-color: #FF69B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+  
+.botao:hover {
+    background-color: #FF1493;
+}
+  
+/* Estilo de foco para acessibilidade */
+.itens button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
+}
+.detalhes{
+    color: #1C1C1C;
+    margin-top: 2rem;
+    word-break: break-all;
+}
+.titulo_descricao{
+    font-size: 20px;
+    margin: 4px;
+
+}
+.descricao{
+    margin: 4px;
+}
