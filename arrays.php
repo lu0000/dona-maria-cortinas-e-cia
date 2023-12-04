@@ -1,6 +1,6 @@
 <?php
 
-$produtos_promocao = [
+$produtos = [
     [
         "nome" => "Cortina Tonia Poliéster Branco 2,8x3m 1 Folha Inspire",
         "foto" => "imagens/cortinas/1.jpg",

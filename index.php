@@ -1,5 +1,5 @@
 <?php
-require "arrays.php";
+    require "arrays.php";
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ require "arrays.php";
 <body>
     <header>
         <div class="logo-topo">
-            <a href="index.html"><img src="imagens/elementos-do-site/logo-dona-maria-1.png"></a>
+            <a href="index.php"><img src="imagens/elementos-do-site/logo-dona-maria-1.png"></a>
         </div>
         
         <div class="barra-pesquisa">
@@ -30,7 +30,7 @@ require "arrays.php";
         <div id="menu-topo">
             <ul>
                 <li><a href="paginas/login.html"><img src="imagens/elementos-do-site/entrar.png"></a></li>
-                <li><a href="paginas/favoritos.html"><img src="imagens/elementos-do-site/favoritos.png"></a></li>
+                <li><a href=""><img src="imagens/elementos-do-site/favoritos.png"></a></li>
                 <li><a href="paginas/carrinho.html"><img src="imagens/elementos-do-site/carrinho.png"></a></li>
             </ul>
         </div>
@@ -72,31 +72,26 @@ require "arrays.php";
                 </a>
             </div>
 
-            <div class="titulo-categoria"><h1>Aqui estão as Peças em Promoção</h1></div>
+            <div class="titulo-categoria"><h1>Peças em Promoção</h1></div>
             
-            
+            <div class="bloco-itens">
+                <?php
+                    foreach($produtos as $i => $f){
+                        if($f["tela_inicial"] == "promocao"){
+                ?>
                 <div class="itens">
-                    <?php
-                        foreach($produtos_promocao as $i => $f){
-                            if($f["tela_inicial"] == "promocao"){ 
-                    ?>
-                    <div class="itens2">
-                        <a href=""></a>
-                        <div class="itens-img">
-                            <img src="<?=$f["foto"]?>" alt="">
-                        </div>
-                        <div class="itens-descricao">
-                            <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
-                            <p><s><?=$f["preco_cortado"]?></s></p>
-                            <h1><?=$f["preco"]?></h1>
-                            <button>Comprar</button>
-                        </div>
-                    <div>
-                    <?php
-                        }}
-                    ?>
+                    <div class="itens-img"><a href=""><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></a></div>
+                    <div class="itens-descricao">
+                        <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
+                        <p><s><?=$f["preco_cortado"]?></s></p>
+                        <h1><?=$f["preco"]?></h1>
+                        <button>Comprar</button>
+                    </div>
                 </div>
-            
+                <?php
+                    }}
+                ?>
+            </div>
                 
         </section>
 
@@ -108,31 +103,24 @@ require "arrays.php";
                 </a>
             </div>
 
-            <div class="titulo-categoria"><h1>Aqui estão as Peças mais Vendidas</h1></div>
+            <div class="titulo-categoria"><h1>Peças mais Vendidas</h1></div>
             
             <div class="bloco-itens">
-            
-            <div class="itens">
-                    <?php
-                        foreach($produtos_promocao as $i => $f){
-                            if($f["tela_inicial"] == "mais vendidas"){ 
-                    ?>
-                    <div class="itens2">
-                        <a href=""></a>
-                        <div class="itens-img">
-                            <img src="<?=$f["foto"]?>" alt="">
-                        </div>
-                        <div class="itens-descricao">
-                            <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
-                            <h1><?=$f["preco"]?></h1>
-                            <button>Comprar</button>
-                        </div>
-                    <div>
-                    <?php
-                        }}
-                    ?>
+            <?php
+                    foreach($produtos as $i => $f){
+                        if($f["tela_inicial"] == "mais vendidas"){
+                ?>
+                <div class="itens">
+                    <div class="itens-img"><a href=""><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></a></div>
+                    <div class="itens-descricao">
+                        <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
+                        <h1><?=$f["preco"]?></h1>
+                        <button>Comprar</button>
+                    </div>
                 </div>
-
+                <?php
+                    }}
+                ?>
             </div>
                 
         </section>
@@ -145,29 +133,24 @@ require "arrays.php";
                 </a>
             </div>
 
-            <div class="titulo-categoria"><h1>Aqui estão as Novidades</h1></div>
+            <div class="titulo-categoria"><h1>Novidades</h1></div>
             
             <div class="bloco-itens">
-            <div class="itens">
-                    <?php
-                        foreach($produtos_promocao as $i => $f){
-                            if($f["tela_inicial"] == "novidades"){ 
-                    ?>
-                    <div class="itens2">
-                        <a href=""></a>
-                        <div class="itens-img">
-                            <img src="<?=$f["foto"]?>" alt="">
-                        </div>
-                        <div class="itens-descricao">
-                            <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
-                            <h1><?=$f["preco"]?></h1>
-                            <button>Comprar</button>
-                        </div>
-                    <div>
-                    <?php
-                        }}
-                    ?>
+            <?php
+                    foreach($produtos as $i => $f){
+                        if($f["tela_inicial"] == "mais vendidas"){
+                ?>
+                <div class="itens">
+                    <div class="itens-img"><a href=""><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></a></div>
+                    <div class="itens-descricao">
+                        <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
+                        <h1><?=$f["preco"]?></h1>
+                        <button>Comprar</button>
+                    </div>
                 </div>
+                <?php
+                    }}
+                ?>
             </div>
                 
         </section>
