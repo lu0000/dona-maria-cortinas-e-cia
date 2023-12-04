@@ -3,9 +3,9 @@
 
     if(isset($_GET["i"])){
     $i = $_GET ["i"];
-    $f = $produtos_promocao[$i];
+    $f = $produtos[$i];
 }else {
-    header("location: compra.php");
+    header("location: visualizar.php");
     die;
 }
 ?>
@@ -44,9 +44,9 @@
     </header>
 
     <main><!--Corpo do Site-->
-    <section id="comprar">
-            <div class="comprarproduto">
-                <div class="comprarimg">
+    <section id="visualizar">
+            <div class="visualizarproduto">
+                <div class="visualizarimg">
                     <img src="../<?=$f["foto"]?>">
                 </div>
             </div>

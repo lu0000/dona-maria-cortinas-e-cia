@@ -80,12 +80,15 @@
                         if($f["tela_inicial"] == "promocao"){
                 ?>
                 <div class="itens">
-                    <div class="itens-img"><a href=""><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></a></div>
+                <a href="paginas/visualizar.php?i=<?=$i?>">
+                    <div class="itens-img"><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
                     <div class="itens-descricao">
                         <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                         <p><s><?=$f["preco_cortado"]?></s></p>
                         <h1><?=$f["preco"]?></h1>
+                 
                     </div>
+                </a>
                 </div>
                 <?php
                     }}
@@ -110,11 +113,13 @@
                         if($f["tela_inicial"] == "mais vendidas"){
                 ?>
                 <div class="itens">
-                    <div class="itens-img"><a href=""><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></a></div>
+                <a href="paginas/visualizar.php?i=<?=$i?>">
+                    <div class="itens-img"><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
                     <div class="itens-descricao">
                         <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                         <h1><?=$f["preco"]?></h1>
                     </div>
+                </a>
                 </div>
                 <?php
                     }}
@@ -139,11 +144,13 @@
                         if($f["tela_inicial"] == "mais vendidas"){
                 ?>
                 <div class="itens">
-                    <div class="itens-img"><a href=""><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></a></div>
+                <a href="paginas/visualizar.php?i=<?=$i?>">
+                    <div class="itens-img"><img src="<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
                     <div class="itens-descricao">
                         <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                         <h1><?=$f["preco"]?></h1>
                     </div>
+                    </a>
                 </div>
                 <?php
                     }}
