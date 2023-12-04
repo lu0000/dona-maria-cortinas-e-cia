@@ -135,7 +135,6 @@ main{
     height: 11rem;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     word-wrap: break-word;
 }
 .itens-descricao div{
@@ -157,31 +156,6 @@ main{
     overflow: hidden;
 }
 
-/* Estilo base do botão */
-.itens button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 25px;
-    background-color: #FF69B4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-/* Estilo de hover para o botão */
-.itens button:hover {
-    background-color: #FF1493;
-}
-
-/* Estilo de foco para acessibilidade */
-.itens button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(255, 105, 180, 0.8);
-}
 .carrinho{
     padding: 1rem 16%;
 }

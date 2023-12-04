@@ -85,7 +85,6 @@
                         <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                         <p><s><?=$f["preco_cortado"]?></s></p>
                         <h1><?=$f["preco"]?></h1>
-                        <button>Comprar</button>
                     </div>
                 </div>
                 <?php
@@ -115,7 +114,6 @@
                     <div class="itens-descricao">
                         <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                         <h1><?=$f["preco"]?></h1>
-                        <button>Comprar</button>
                     </div>
                 </div>
                 <?php
@@ -145,7 +143,6 @@
                     <div class="itens-descricao">
                         <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                         <h1><?=$f["preco"]?></h1>
-                        <button>Comprar</button>
                     </div>
                 </div>
                 <?php
