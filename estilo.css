@@ -200,6 +200,7 @@ a{
     width: 100%;
     display:grid;
     grid-template-columns: 70% repeat(1, 1fr);
+    justify-content: center;
     gap: 1rem;
 }
 .produtos-carrinho{
@@ -323,11 +324,6 @@ a{
     margin: 2px;
     height: 70%;
     width: 88%;
-}
-
-/*Favoritos ---------------------------------------------------------------------*/
-.favoritos{
-    padding: 1rem 16%;
 }
 
 /*Rodapé do site---------------------------------------------------------------------*/
@@ -538,16 +534,66 @@ select {
     flex-direction: column;
     justify-content: start;
 }
-a{
-    text-decoration: none;
-    color: #000;
-}
 .itenspg:hover{
     box-shadow: 
     2px 0 10px -3px rgba(99, 98, 98, 0.2), /* Sombra à direita */
     -2px 0 10px -3px rgba(99, 98, 98, 0.2); /* Sombra à esquerda */
 }
 .texto-limitadopg {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Mostrar apenas 3 linhas de texto */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/*Favoritos ---------------------------------------------------------------------*/
+
+.favoritos{
+    padding: 1rem 16%;
+}
+.bloco-itensf{
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    justify-content: center;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+.itensf{
+    height: 27rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid rgba(203, 202, 202, 0.451);
+}
+.itens-imgf{
+    height: 17rem;
+    background-color: #D13A65;
+}
+.itens-imgf img{
+    width: 100%;
+    height: 100%;
+}
+.itens-descricaof{
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+.itens-descricaof div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    justify-content: start;
+}
+.itensf:hover{
+    box-shadow: 
+    2px 0 10px -3px rgba(99, 98, 98, 0.2), /* Sombra à direita */
+    -2px 0 10px -3px rgba(99, 98, 98, 0.2); /* Sombra à esquerda */
+}
+.texto-limitadof {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Mostrar apenas 3 linhas de texto */
     -webkit-box-orient: vertical;

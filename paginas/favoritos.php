@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../estilo.css" rel="stylesheet">
-        <title>Divisorias Hospitalares</title>
+        <title>Favoritos</title>
 </head>
 
 <body>
@@ -23,6 +23,7 @@
                 <label>
                     <input type="text" id="nome" name="nome" placeholder="O que você procura?" required>
                 </label>
+
                 <button><img src="../imagens/elementos-do-site/lupa.png"></button>
             </form>
         </div>
@@ -36,25 +37,37 @@
         </div>
     </header>
 
-    <main><!--Corpo do Site-->
-        <div class="bloco-itenspg">
-            <?php
-                foreach($produtos as $i => $f){
-                    if($f["categoria"] == "divisorias"){
-            ?>
-            <div class="itenspg">
-                <a href="visualizar.php?i=<?=$i?>">
-                    <div class="itens-imgpg"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
-                    <div class="itens-descricaopg">
-                        <div><p class="texto-limitadopg"><?=$f["nome"]?></p></div>
-                        <h1><?=$f["preco"]?></h1>
-                    </div>
-                </a>
-            </div>
-            <?php
-                }}
-            ?>
+<main class="favoritos-principal"><!--Corpo do Site-->
+    
+    <div favoritos class="favoritos">
+
+        <div class="titulo-carrinho">
+            <h2>Meu Carrinho</h2>
+            <a href="../index.php"><button>Continuar Comprando ></button></a>
         </div>
+
+        <div class="sub-favoritos">
+            <div class="bloco-itensf">
+                <?php
+                    foreach($favoritos as $i => $f){
+                ?>
+                <div class="itensf">
+                    <a href="visualizar.php?i=<?=$i?>">
+                        <div class="itens-imgf"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
+                        <div class="itens-descricaof">
+                            <div><p class="texto-limitadof"><?=$f["nome"]?></p></div>
+                            <h1><?=$f["preco"]?></h1>
+                        </div>
+                    </a>
+                </div>
+                <?php
+                    }
+                ?>
+            </div>
+        </div>
+
+    </div>
+
     </main>
 
     <footer><!--Rodapé do Site-->
