@@ -42,11 +42,11 @@
                 foreach($produtos as $i => $f){
                     if($f["categoria"] == "cortinas"){
             ?>
-            <div class="itenspg">
+            <div class="itens">
                 <a href="visualizar.php?i=<?=$i?>">
-                    <div class="itens-imgpg"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
-                    <div class="itens-descricaopg">
-                        <div><p class="texto-limitadopg"><?=$f["nome"]?></p></div>
+                    <div class="itens-img"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
+                    <div class="itens-descricao">
+                        <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                         <h1><?=$f["preco"]?></h1>
                     </div>
                 </a>

@@ -51,11 +51,11 @@
                 <?php
                     foreach($favoritos as $i => $f){
                 ?>
-                <div class="itensf">
+                <div class="itens">
                     <a href="visualizarfavoritos.php?i=<?=$i?>">
-                        <div class="itens-imgf"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
-                        <div class="itens-descricaof">
-                            <div><p class="texto-limitadof"><?=$f["nome"]?></p></div>
+                        <div class="itens-img"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
+                        <div class="itens-descricao">
+                            <div><p class="texto-limitado"><?=$f["nome"]?></p></div>
                             <h1><?=$f["preco"]?></h1>
                         </div>
                     </a>
