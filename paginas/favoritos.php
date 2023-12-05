@@ -52,7 +52,7 @@
                     foreach($favoritos as $i => $f){
                 ?>
                 <div class="itensf">
-                    <a href="visualizar.php?i=<?=$i?>">
+                    <a href="visualizarfavoritos.php?i=<?=$i?>">
                         <div class="itens-imgf"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
                         <div class="itens-descricaof">
                             <div><p class="texto-limitadof"><?=$f["nome"]?></p></div>
