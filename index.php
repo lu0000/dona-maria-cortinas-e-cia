@@ -48,19 +48,19 @@
         <section class="categorias"><!--Categorias-->
             <div class="cat">
                 <h1>Cortinas</h1>
-                <div><a><img src="imagens/cortinas/1.jpg" alt=""></a></div>
+                <div><a href="paginas/cortinas.php"><img src="imagens/cortinas/1.jpg" alt=""></a></div>
             </div>
             <div class="cat">
                 <h1>Percianas</h1>
-                <div><a><img src="imagens/persianas/1.jpg" alt=""></a></div>
+                <div><a href="paginas/percianas.php"><img src="imagens/persianas/1.jpg" alt=""></a></div>
             </div>
             <div class="cat">
                 <h1>Divisoria hospitalares</h1>
-                <div><a><img src="imagens/divisorias hospitalares/1.jpg" alt=""></a></div>
+                <div><a href="paginas/divisoriashospitalares.php"><img src="imagens/divisorias hospitalares/1.jpg" alt=""></a></div>
             </div>
             <div class="cat">
                 <h1>Toldos</h1>
-                <div><a><img src="imagens/toldos/1.jpg" alt=""></a></div>
+                <div><a href="paginas/toldos.php"><img src="imagens/toldos/1.jpg" alt=""></a></div>
             </div>
         </section>
 
