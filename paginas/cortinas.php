@@ -37,25 +37,23 @@
     </header>
 
     <main><!--Corpo do Site-->
-        <div class="todos-produtos">
-            <div class="bloco-itenspg">
-                <?php
-                    foreach($produtos as $i => $f){
-                        if($f["tela_inicial"] == "promocao"){
-                ?>
-                <div class="itenspg">
-                    <a href="visualizar.php?i=<?=$i?>">
-                        <div class="itens-imgpg"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
-                        <div class="itens-descricaopg">
-                            <div><p class="texto-limitadopg"><?=$f["nome"]?></p></div>
-                            <h1><?=$f["preco"]?></h1>
-                        </div>
-                    </a>
-                </div>
-                <?php
-                    }}
-                ?>
+        <div class="bloco-itenspg">
+            <?php
+                foreach($produtos as $i => $f){
+                    if($f["categoria"] == "cortinas"){
+            ?>
+            <div class="itenspg">
+                <a href="visualizar.php?i=<?=$i?>">
+                    <div class="itens-imgpg"><img src="../<?=$f["foto"]?>" alt="<?=$f["descricao"]?>"></div>
+                    <div class="itens-descricaopg">
+                        <div><p class="texto-limitadopg"><?=$f["nome"]?></p></div>
+                        <h1><?=$f["preco"]?></h1>
+                    </div>
+                </a>
             </div>
+            <?php
+                }}
+            ?>
         </div>
     </main>
 

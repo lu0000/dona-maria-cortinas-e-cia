@@ -120,6 +120,7 @@ main{
 .bloco-itens{
     display: grid;
     grid-template-columns: repeat(4, 23%);
+    justify-content: center;
     gap: 30px;
 }
 .itens{
@@ -495,14 +496,12 @@ select {
 }
 
 /* Paginas dos Produtos */
-.todos-produtos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
 .bloco-itenspg{
     display: grid;
     grid-template-columns: repeat(6, 15%);
+    justify-content: center;
+    padding-top: 1rem;
     gap: 30px;
 }
 .itenspg{
